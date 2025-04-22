@@ -913,11 +913,12 @@ a:hover {
   font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
-  padding: .4rem 0;
+  padding: 1.4rem 0;
 }
 
 .service-box .s-description {
   color: #4e4e4e;
+  padding: 0 4rem;
 }
 
 /*======================================
@@ -1758,8 +1759,8 @@ iframe{
   border: 2px solid white;
 }
 
-/* .swiper-pagination-bullet > .swiper-pagination-bullet-active{
-  background-color: #66785F !important;
-} */
+.swiper-pagination-bullet-active{
+  background: #66785F !important;
+}
 
 
