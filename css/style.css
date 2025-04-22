@@ -162,9 +162,9 @@ a:hover {
 .cv-btn{
   color: #f2f2f2;
   font-size: 20px;
-  padding: 0.8rem 0.9rem 0.9rem 0.9rem;
+  padding: 0.9rem 1.5rem 0.9rem 1.5rem;
   background-color: #91AC8F ;
-  border-radius: 20px;
+  border-radius: 5rem;
   border: 2px solid #91AC8F ;
   line-height: 3;
   position: relative;
@@ -938,7 +938,7 @@ a:hover {
   height: 60px;
   width: 60px;
   line-height: 1.8;
-  box-shadow: 0 0 0 10px #cde1f8;
+  box-shadow: 0 0 0 10px #ffffff;
 }
 
 .counter-num .counter {
@@ -950,33 +950,51 @@ a:hover {
   justify-content: center;
 }
 
-.soft-wrap{
+.soft-wrap {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
 }
 
-.soft{
-  color: #171717;
-  font-size: 17px;
-  font-weight: 600;
-  margin: 1rem 2rem;
+/* Chaque bloc logiciel */
+.soft {
+  width: 150px;
   text-align: center;
-  /* background-color: #ffffff; */
-  padding: 0rem;
-  border-radius: 10px;
-  /* box-shadow: 0rem 0rem 1rem #5656564e; */
+  transition: transform 0.3s ease;
 }
 
-.soft p{
-  margin-top: 1rem;
+.soft img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 0.5rem;
 }
 
-.soft img{
-  width: 100px;
-  height: 100px;
+.soft p {
+  font-size: 0.9rem;
+  color: #333;
 }
+
+/* Responsive téléphone */
+@media screen and (max-width: 768px) {
+  .soft-wrap {
+    gap: 1.5rem;
+  }
+
+  .soft {
+    width: 100px;
+  }
+
+  .soft img {
+    width: 50px;
+  }
+
+  .soft p {
+    font-size: 0.8rem;
+  }
+}
+
 
 
 
@@ -1762,5 +1780,6 @@ iframe{
 .swiper-pagination-bullet-active{
   background: #66785F !important;
 }
+
 
 
